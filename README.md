@@ -19,6 +19,8 @@ Look for discrepancies and nulls, figure out what the data means, and brainstorm
 
 ### Visual check (Excel)
 This is a set of clothing orders from Amazon India.
+
+Look for: row count, number of columns, column data types, rough distribution of column values, duplicate rows, null values, invalid data formats.
 <img src="/assets/Excel_visual_check.png" alt="Visual check in Excel"/>
 
 ### Power BI column preview
@@ -95,26 +97,26 @@ This project will showcase implementation of basic DBT elements. The warehouse d
 <img src="/assets/Design.This_demo.png" alt="Simplified warehouse design"/>
 
 1. STAGED
-An ingestion framework already exists. The delivered data would already be loaded in the Staging area (partitioned by day) in a parquet file. Postgres accesses the staged data via a foreign table.
+For this project --> assume an ingestion framework already exists, and the raw data is loaded into the Staged schema.
 2. CLEANED
 Cleaning (normalization, flitering, cleaning) is done. Features may be derived. Columns may be renamed. Data is kept in its original format. Data sources are kept separated.
 3. TRANSFORMED
 Data is transformed into facts and dimensions. Data sources are combined. Calculations &/or aggregations are created.
-PURPOSELY OMITTED, to minimize complexity:
-Historical records and slowly changing dimensions.
-In a real warehouse each table has a load_date column. Typically the intermediate layer contains multiple records per item, with different load_dates -- the historical records. And unless there is a specific requirement to track the changes of an entity over time, the data mart / presentation layer contains only the current record for each entity.
+4. PURPOSELY OMITTED, to minimize complexity:
+Historical records and slowly changing dimensions. In a real warehouse each table has a load_date column. Typically the intermediate layer contains multiple records per item, with different load_dates -- the historical records. And unless there is a specific requirement to track the changes of an entity over time, the data mart / presentation layer contains only the current record for each entity.
 
 
-A typical complete data warehouse would have more sections. Historical changes are handled, hashes may be included as indexes. Calculations and aggregations are done in separate layers.
+A typical complete data warehouse would have more layers. Historical changes are handled, hashes may be included as indexes. Calculations and aggregations are usually separated into different layers, and the presentation / semantic model / tabular model is likely done in a different tool such as Power BI Service, Azure Analysis Service.
 <img src="/assets/Design.Typical_warehouse.png" alt="Typical full warehouse"/>
 
-Typical naming convention for staged area:
+Typical naming convention for staged area are parquet files, partitioned by year/month/day:
 * src/sal/year/month/day/amazon_orders.parquet
 * src/ref/year/month/day/india_states.parquet
-Parquet files, partitioned by year/month/day.
 
-Cleaning area typically has data sources still separated (eg. by database schema).
-Modelling area would have transformed data and calculations.
+In the Cleaning area, the data from each source is usually still separated from each other.
+
+Modelling area would have combined data, which is transformed. Calculations are done.
+
 Presentation area would have aggregations and derived KPIs.
 
 
@@ -123,15 +125,20 @@ To make a data model, first separate the data into logical entities.
 <img src="/assets/separate_logical_entities.png" alt="Separate the logical entities"/>
 
 Then draw relationships between the entities.
-<img src="/assets/data_model.png" alt="Form relationships between the entites"/>
-D_ORDER_ITEM is separated from F_ORDER, because there could be multiple items on one order.
+Define cardinality and mandatory relations.
+<img src="/assets/data_model_complete.png" alt="Form relationships between the entites"/>
 
-
-## Test requirements
-Xxxx.
 
 
 ## Implementation
+First define sources
+Then define models
+
+https://docs.getdbt.com/terms/data-wrangling
+https://airbyte.com/blog/dbt-data-model
+
+
+## Test
 Xxxx.
 
 
