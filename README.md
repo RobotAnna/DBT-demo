@@ -6,27 +6,26 @@ There are 35 Kaggle projects where people clean this dataset using Python. I cou
 
 
 ## Environment Set-Up
-Github - create an account and create new repository
-VS Code - install locally
-Python - install locally
-DBT Core - install locally
-Postgres - install locally, and using the PGAdmin tool, create a target database and schemas
-Power BI Desktop - install locally
+* Github - create an account and create new repository
+* VS Code - install locally
+* Python - install locally
+* DBT Core - install locally
+* Postgres - install locally, and using the PGAdmin tool, create a target database and schemas
+* Power BI Desktop - install locally
 
 
 ## Exploration
-Explore the dataset
-
-### Visual check, in Excel
-This is a set of clothing orders from Amazon India.
 Look for discrepancies and nulls, figure out what the data means, and brainstorm potential insights from the data.
+
+### Visual check (Excel)
+This is a set of clothing orders from Amazon India.
 <img src="/assets/Excel_visual_check.png" alt="Visual check in Excel"/>
 
 ### Power BI column preview
-A quick check in Power BI Desktop (Column Preview) shows the data quality and distributions per column -- to define which cleaning is necessary. This step could also be done in Python..
+A quick check in Power BI Desktop (Column Preview) shows the data quality and distributions per column -- to define which cleaning is necessary. This step could also be done in Python.
 <img src="/assets/PBI_Column_Preview.png" alt="Column check in PBI"/>
 
-### stakeholder discussion
+### Stakeholder Discussion
 At this stage, I would contact business stakeholders to confirm definitions, and application managers to confirm discrepancies in the data.
 
 Definitions
@@ -46,23 +45,31 @@ Questions
 Date
 * Rename to Order Date
 * Normalize date formats (2 formats)
+
 Status
 * Rename to Order status
 * split into 2 columns: Status + sub-status
+
 SKU
 * derive feature Product Color
+
 Courier Status
-* If empty, then derive from Order Status
+* If empty, then derive from Order  Status
+
 Currency
 * If null: populate with INR. Assume only local orders.
+
 Amount
 * If null: populate with 0
+
 Ship-City
 * Convert to upper case
 * Normalize some values with external list
+
 Ship-State
 * Convert to upper case
 * Normalize with external list
+
 Unnamed
 * Remove column
 
@@ -86,7 +93,6 @@ Unnamed
 ## Design
 This project will showcase implementation of basic DBT elements. The warehouse design is simplified so we can focus on DBT.
 <img src="/assets/Design.This_demo.png" alt="Simplified warehouse design"/>
-<!-- style="height: 100px; width:100px;"/>
 
 1. STAGED
 An ingestion framework already exists. The delivered data would already be loaded in the Staging area (partitioned by day) in a parquet file. Postgres accesses the staged data via a foreign table.

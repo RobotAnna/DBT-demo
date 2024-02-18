@@ -2,11 +2,11 @@ import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-csv_file = '/path/to/my.tsv'
-parquet_file = '/path/to/my.parquet'
+csv_file = '2022.05.31.AmazonSaleReport.csv'
+parquet_file = '2022.05.31.AmazonSaleReport.parquet'
 chunksize = 100_000
 
-csv_stream = pd.read_csv(csv_file, sep='\t', chunksize=chunksize, low_memory=False)
+csv_stream = pd.read_csv(csv_file, sep=',', chunksize=chunksize, low_memory=False)
 
 for i, chunk in enumerate(csv_stream):
     print("Chunk", i)
