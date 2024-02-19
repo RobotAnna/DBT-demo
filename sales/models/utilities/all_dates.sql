@@ -1,6 +1,9 @@
 /* SELECT * from {{ dbt_date.get_date_dimension("2015-01-01", "2022-12-31") }} */
 /* https://hub.getdbt.com/calogica/dbt_date/latest/ */
 
+
+
+/*
 {{
     config(
         materialized = "table"
@@ -24,3 +27,4 @@ from
     left join
     fiscal_periods f
         on d.date_day = f.date_day
+*/
