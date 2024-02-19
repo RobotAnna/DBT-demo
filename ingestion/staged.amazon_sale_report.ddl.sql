@@ -1,6 +1,4 @@
-DROP table public.my_first_dbt_model;
-
-CREATE TABLE sales.staged.amazon_sale_report (
+CREATE TABLE sales.dev_staged.amazon_sale_report (
 	"index"					integer,
 	"Order ID"				text,
 	"Date"					text,
@@ -30,4 +28,6 @@ CREATE TABLE sales.staged.amazon_sale_report (
 ;
 
 
-select * from sales.staged.amazon_sale_report;
+select * from sales.dev_staged.amazon_sale_report;
+
+

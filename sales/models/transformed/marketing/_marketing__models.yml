@@ -1,0 +1,8 @@
+version: 1
+
+sources:
+  - name: cleaned
+    database: sales  
+    schema: dev_cleaned
+    tables:
+      - name: cln_sales_report

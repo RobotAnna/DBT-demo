@@ -3,7 +3,6 @@ version: 1
 sources:
   - name: staged
     database: sales  
-    schema: staged  
+    schema: dev_staged
     tables:
       - name: amazon_sale_report
-

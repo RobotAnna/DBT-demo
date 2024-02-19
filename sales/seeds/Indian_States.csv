@@ -1,38 +1,38 @@
-STATE_ID, STATE_NAME, STATE_INITIALS
-1, Andhra Pradesh, AP
-2, Arunachal Pradesh, AR
-3, Assam, AS
-4, Bihar, BR
-5, Chhattisgarh, CG
-6, Goa, GA
-7, Gujarat, GJ
-8, Haryana, HR
-9, Himachal Pradesh, HP
-10, Jammu and Kashmir, JK
-11, Jharkhand, JH
-12, Karnataka, KA
-13, Kerala, KL
-14, Madhya Pradesh, MP
-15, Maharashtra, MH
-16, Manipur, MN
-17, Meghalaya, ML
-18, Mizoram, MZ
-19, Nagaland, NL
-20, Orissa, OR
-21, Punjab, PB
-22, Rajasthan, RJ
-23, Sikkim, SK
-24, Tamil Nadu, TN
-25, Tripura, TR
-26, Uttarakhand, UK
-27, Uttar Pradesh, UP
-28, West Bengal, WB
-29, Tamil Nadu, TN
-30, Tripura, TR
-31, Andaman and Nicobar Islands, AN
-32, Chandigarh, CH
-33, Dadra and Nagar Haveli, DH
-34, Daman and Diu, DD
-35, Delhi, DL
-36, Lakshadweep, LD
-37, Pondicherry, PY
+state_id,state_name,state_initials,name_upper
+1,Andhra Pradesh,AP,ANDHRA PRADESH
+2,Arunachal Pradesh,AR,ARUNACHAL PRADESH
+3,Assam,AS,ASSAM
+4,Bihar,BR,BIHAR
+5,Chhattisgarh,CG,CHHATTISGARH
+6,Goa,GA,GOA
+7,Gujarat,GJ,GUJARAT
+8,Haryana,HR,HARYANA
+9,Himachal Pradesh,HP,HIMACHAL PRADESH
+10,Jharkhand,JH,JHARKHAND
+11,Karnataka,KA,KARNATAKA
+12,Kerala,KL,KERALA
+13,Madhya Pradesh,MP,MADHYA PRADESH
+14,Maharashtra,MH,MAHARASHTRA
+15,Manipur,MN,MANIPUR
+16,Meghalaya,ML,MEGHALAYA
+17,Mizoram,MZ,MIZORAM
+18,Nagaland,NL,NAGALAND
+19,Odisha,OD,ODISHA
+20,Punjab,PB,PUNJAB
+21,Rajasthan,RJ,RAJASTHAN
+22,Sikkim,SK,SIKKIM
+23,Tamil Nadu,TN,TAMIL NADU
+24,Tripura,TR,TRIPURA
+25,Telangana,TS,TELANGANA
+26,Uttarakhand,UK,UTTARAKHAND
+27,Uttar Pradesh,UP,UTTAR PRADESH
+28,West Bengal,WB,WEST BENGAL
+29,Andaman and Nicobar Islands,AN,ANDAMAN AND NICOBAR ISLANDS
+30,Chandigarh,CH,CHANDIGARH
+31,Dadra and Nagar Haveli,DH,DADRA AND NAGAR HAVELI
+32,Daman and Diu,DD,DAMAN AND DIU
+33,Delhi,DL,DELHI
+34,Jammu and Kashmir,JK,JAMMU AND KASHMIR
+35,Ladakh,LA,LADAKH
+36,Lakshadweep,LD,LAKSHADWEEP
+37,Puducherry,PY,PUDUCHERRY
