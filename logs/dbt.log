@@ -1,0 +1,128 @@
+[0m22:38:42.953433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429CFA46D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429E2DF050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429E598390>]}
+
+
+============================== 22:38:42.953433 | 3b11b3c2-42dd-40d5-a69e-742078a1e501 ==============================
+[0m22:38:42.953433 [info ] [MainThread]: Running with dbt=1.7.8
+[0m22:38:42.953433 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\nerri\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init sales', 'send_anonymous_usage_stats': 'True'}
+[0m22:38:42.953433 [debug] [MainThread]: Starter project path: C:\Users\nerri\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m22:38:42.994406 [info ] [MainThread]: 
+Your new dbt project "sales" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:38:42.997461 [info ] [MainThread]: Setting up your profile.
+[0m22:39:51.840472 [info ] [MainThread]: Profile sales written to C:\Users\nerri\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:39:51.848090 [debug] [MainThread]: Command `dbt init` succeeded at 22:39:51.848090 after 68.92 seconds
+[0m22:39:51.849452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429E27EDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429E27F7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429E27E610>]}
+[0m22:39:51.849452 [debug] [MainThread]: Flushing usage events
+[0m22:48:27.860703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271CBCB8C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271CB78EE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271CB78ED50>]}
+
+
+============================== 22:48:27.863638 | 2bba31a8-bc27-42e9-b3ef-89e7f22147c3 ==============================
+[0m22:48:27.863638 [info ] [MainThread]: Running with dbt=1.7.8
+[0m22:48:27.864758 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\nerri\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:48:27.864758 [info ] [MainThread]: dbt version: 1.7.8
+[0m22:48:27.865710 [info ] [MainThread]: python version: 3.11.7
+[0m22:48:27.865710 [info ] [MainThread]: python path: C:\Users\nerri\AppData\Local\Programs\Python\Python311\python.exe
+[0m22:48:27.866665 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m22:48:27.867706 [info ] [MainThread]: target not specified in profile 'sales', using 'default'
+[0m22:48:27.867706 [error] [MainThread]: Encountered an error:
+'str' object has no attribute 'get'
+[0m22:48:27.881847 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\nerri\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nerri\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nerri\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 444, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\nerri\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\debug.py", line 123, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nerri\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\debug.py", line 212, in _load_profile
+    profile: Profile = Profile.render(
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\nerri\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\profile.py", line 436, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nerri\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\profile.py", line 401, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nerri\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\profile.py", line 343, in from_raw_profile_info
+    user_config = raw_profile.get("config")
+                  ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+[0m22:48:27.885124 [debug] [MainThread]: Command `dbt debug` failed at 22:48:27.884123 after 0.06 seconds
+[0m22:48:27.885522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271CB4AE510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271CB4DB990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271C463ED10>]}
+[0m22:48:27.885522 [debug] [MainThread]: Flushing usage events
+[0m22:50:52.110064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000251A17C7490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000251A13080D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000251A17C6950>]}
+
+
+============================== 22:50:52.110064 | 76b92bfc-f9bc-4baf-97f6-1314236b700a ==============================
+[0m22:50:52.110064 [info ] [MainThread]: Running with dbt=1.7.8
+[0m22:50:52.110064 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\nerri\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m22:50:52.110064 [info ] [MainThread]: dbt version: 1.7.8
+[0m22:50:52.110064 [info ] [MainThread]: python version: 3.11.7
+[0m22:50:52.110064 [info ] [MainThread]: python path: C:\Users\nerri\AppData\Local\Programs\Python\Python311\python.exe
+[0m22:50:52.110064 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m22:50:52.165286 [info ] [MainThread]: Using profiles dir at C:\Users\nerri\.dbt
+[0m22:50:52.165286 [info ] [MainThread]: Using profiles.yml file at C:\Users\nerri\.dbt\profiles.yml
+[0m22:50:52.165286 [info ] [MainThread]: Using dbt_project.yml file at D:\Projects\E-Commerce_Sales_Dataset\dbt_project.yml
+[0m22:50:52.165286 [info ] [MainThread]: adapter type: postgres
+[0m22:50:52.165286 [info ] [MainThread]: adapter version: 1.7.8
+[0m22:50:52.165286 [info ] [MainThread]: Configuration:
+[0m22:50:52.165286 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:50:52.165286 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:50:52.165286 [info ] [MainThread]: Required dependencies:
+[0m22:50:52.165286 [debug] [MainThread]: Executing "git --help"
+[0m22:50:52.197524 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:50:52.197524 [debug] [MainThread]: STDERR: "b''"
+[0m22:50:52.198199 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:50:52.199306 [info ] [MainThread]: Connection:
+[0m22:50:52.199749 [info ] [MainThread]:   host: localhost
+[0m22:50:52.199749 [info ] [MainThread]:   port: 5432
+[0m22:50:52.199749 [info ] [MainThread]:   user: postgres
+[0m22:50:52.199749 [info ] [MainThread]:   database: sales
+[0m22:50:52.199749 [info ] [MainThread]:   schema: public
+[0m22:50:52.199749 [info ] [MainThread]:   connect_timeout: 10
+[0m22:50:52.199749 [info ] [MainThread]:   role: None
+[0m22:50:52.199749 [info ] [MainThread]:   search_path: None
+[0m22:50:52.199749 [info ] [MainThread]:   keepalives_idle: 0
+[0m22:50:52.199749 [info ] [MainThread]:   sslmode: None
+[0m22:50:52.199749 [info ] [MainThread]:   sslcert: None
+[0m22:50:52.199749 [info ] [MainThread]:   sslkey: None
+[0m22:50:52.206846 [info ] [MainThread]:   sslrootcert: None
+[0m22:50:52.207274 [info ] [MainThread]:   application_name: dbt
+[0m22:50:52.207664 [info ] [MainThread]:   retries: 1
+[0m22:50:52.207664 [info ] [MainThread]: Registered adapter: postgres=1.7.8
+[0m22:50:52.207664 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m22:50:52.207664 [debug] [MainThread]: Using postgres connection "debug"
+[0m22:50:52.207664 [debug] [MainThread]: On debug: select 1 as id
+[0m22:50:52.207664 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:50:52.260084 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m22:50:52.261261 [debug] [MainThread]: On debug: Close
+[0m22:50:52.261261 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:50:52.262284 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:50:52.263356 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Projects\E-Commerce_Sales_Dataset\dbt_project.yml> not found
+
+[0m22:50:52.264075 [debug] [MainThread]: Command `dbt debug` failed at 22:50:52.264075 after 0.18 seconds
+[0m22:50:52.264075 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:50:52.265085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000251A104E750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000251A13D6A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000251A1838510>]}
+[0m22:50:52.265479 [debug] [MainThread]: Flushing usage events

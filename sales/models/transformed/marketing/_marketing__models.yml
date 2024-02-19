@@ -1,4 +1,4 @@
-version: 1
+version: 2
 
 sources:
   - name: cleaned
@@ -6,3 +6,20 @@ sources:
     schema: dev_cleaned
     tables:
       - name: cln_sales_report
+  - name: transformed
+    database: sales  
+    schema: dev_transformed
+    tables:
+      - name: d_product
+      - name: d_date
+      - name: d_address
+      - name: d_courier_status
+      - name: d_order_status
+      - name: d_order_item
+
+models:
+  - name: f_order
+    columns:
+      - name: order_id
+        tests:
+          - not_null

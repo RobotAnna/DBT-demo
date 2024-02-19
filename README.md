@@ -1,14 +1,12 @@
 # Analysis
 This is a demo project: from dataset to visualization, using DBT to create pipelines and a Postgres database as a data wareehouse.
 
-
-
 The source dataset is the "E-Commerce Sales Dataset" from Kaggle.
 https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data/ 
-There are 35 Kaggle projects where people clean this dataset using Python. I couldn't find any projects where the data was modelled &/or transformed using DBT.
+There are many Kaggle projects utilizing this dataset, but only using Python. None used DBT/SQL.
 
+The dataset is normalized with a list of Indian states. 
 https://en.wikipedia.org/wiki/States_and_union_territories_of_India
-
 
 
 ## Environment Set-Up
@@ -145,9 +143,22 @@ https://airbyte.com/blog/dbt-data-model
 
 
 ## Test
-Xxxx.
+2x examples configured:
+* built-in test in Models (Cleaned) yml file
+* custom sql test on a specific column
 
 
 ## Visualization
-Xxxx.
+See pbix file.
+
+<img src="/assets/visual_sales.png" alt="Sales Trend"/>
+
+
+<img src="/assets/visual_cancellaton.png" alt="Cancellations"/>
+
+
+<img src="/assets/visual_region.png" alt="Regional Value"/>
+
+
+<img src="/assets/visual_product.png" alt="Product Trend"/>
 
