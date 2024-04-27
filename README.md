@@ -154,10 +154,10 @@ See pbix file.
 <img src="/assets/visual_sales.png" alt="Sales Trend"/>
 
 
-<img src="/assets/visual_cancellaton.png" alt="Cancellations"/>
+<img src="/assets/visual_cancellation.png" alt="Cancellations"/>
 
 
-<img src="/assets/visual_region.png" alt="Regional Value"/>
+<img src="/assets/vislau_region.png" alt="Regional Value"/>
 
 
 <img src="/assets/visual_product.png" alt="Product Trend"/>
