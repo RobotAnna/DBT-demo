@@ -1,0 +1,36 @@
+E-Commerce_Sales_Dataset
+│
+├── README.md
+├── assets  --> images for the readme
+│
+├── E-Commerce_Analysis.pbix  --> visualizations
+│
+└── sales	--> the DBT project
+	├── dbt_project.yml
+	├── dependencies.yml
+	├── seeds
+	│	├── states_india.csv	--> from wikipedia, to normalize states
+	│	└── product_catalog.csv	--> one of the other files from the Kaggle dataset, to derive product color
+	├── dbt_project.yml
+	├── macros					--> standard transformations &/or cleaning functions could be here
+	├── models
+	│	├── cleaned
+	│	│	└── 
+	│	│		├── _cln_sales__models.yml
+	│	│		└── cln_sales_report.sql
+	│	├── transformed
+	│	│	└── marketing
+	│	│		├── _marketing__models.yml
+	│	│		├── f_order.sql
+	│	│		├── d_order_item.sql
+	│	│		├── d_product.sql
+	│	│		├── d_order_status.sql
+	│	│		├── d_courier_status.sql
+	│	│		├── d_address.sql
+	│	│		└── d_date.sql
+	│	└── utilities
+	│		└── all_dates.sql
+	├── packages.yml
+	└── tests
+	 	└── order_quantity_is_positive.sql	--> example of a customized test
+
